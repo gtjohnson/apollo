@@ -1,6 +1,7 @@
 body{background-color: #111; background-attachment:fixed; padding-top:50px;}
+li{list-style-type: none}
 
-#logo{margin:0 auto; padding:0 auto; }
+#logo{margin:0 auto; padding:0 auto; width:150px; height:40px; }
 
 .circular {
 	width: 100px;
@@ -10,11 +11,17 @@ body{background-color: #111; background-attachment:fixed; padding-top:50px;}
 	-moz-border-radius: 150px;
 	background-image:url(../img/portrait.jpg);
 	}
+
+.btn{border-radius:0px;}
+.btn-dark{background-color: #222; background-image:url(../img/dark.png);color:#9AB816; border:none; width:30px; height:30px;}
+.btn-dark:hover{background-color: #444; color:#9AB816; border:none;}
+.btn-light{background-color: #eee; background-image:url(../img/light.png); height:30px; width:30px;}
 .bottom{height:100%;}
 
 .sm{height:50px;}
 .lg{height:500px;}
 
+.navbar .navbar-fixed-top{min-height:30px; height:30px;}
 .navbar-inverse .navbar-nav > li > a {color:#ccc; font-family:Open Sans; font-size:.9em; font-weight: 600;}
 .navbar-inverse .navbar-nav > li > a :focus{color:#F26621;}
 .navbar-brand{padding-top: 5px;padding-bottom: 0px;}

@@ -41,17 +41,20 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.color-2.1.2.min.js"></script>
 <script src="js/landing.js"></script>
+<script src="js/styleswitch.js"></script>
+<script src="js/load.js"></script>
 
 
 </head>
 
 <body>
 
-
+<!-- navbar -->
+<div class="row">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">  
 	<div class="col-md-2"></div>
 	<div class="col-md-8">  
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">  
-		  <div class="container">
+
 		    <div class="navbar-header">
 		      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 		        <span class="sr-only">Toggle navigation</span>
@@ -65,28 +68,42 @@
 		        <li><a href="#work">Work</a></li>
 		        <li class="active"><a href="#about">About</a></li>
 		        <li><a href="#contact">Get in touch</a></li>
-
+		        <li>
+				    <div class="btn-group navbar-right" data-toggle="buttons">
+					  <label class="btn btn-default btn-sm btn-light styleswitch" rel="themeLight">
+					    <input type="radio" name="options" id="option1">
+					  </label>
+					  
+					<label class="btn btn-default btn-sm btn-dark styleswitch" rel="themeDark">
+						<input type="radio" name="options" id="option2"> 
+					</label>
+					  
+					  
+					</div>
+				    </li>  
 		      </ul>
-
+		  		  
+				    
+			   	
 		    </nav>
-		  </div>
 	  </div>
-
-  	</div>
 	<div class="col-md-2"></div>
 </nav>
+</div>
 
-	<div class="row 500px">
+
+<!-- content -->
+	<div class="row lg">
 		<div class="col-md-2"></div>
-		<div class="col-md-8" style="height:300px">
-			<!-- <div class="circular"></div> -->
-		</div>
+		<div class="col-md-8"></div>
 		<div class="col-md-2"></div>
 	</div>
 
-	<div class="row">
+	<div class="row footer">
 		<div class="col-md-12 bottom"></div>
 	</div>
 
 </body>
 </html>
+
+<!-- <div class="circular"></div> -->
