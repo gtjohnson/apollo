@@ -1,7 +1,15 @@
-body{background-color: #111; background-attachment:fixed; padding-top:50px;}
+body{background-color: #555; background-attachment:fixed; padding-top:50px; background-image: url(../img/bg1.jpg);}
+h1{font-family: 'Roboto', sans-serif; font-weight: 100; font-size: 2em; color:#ccc;}
 li{list-style-type: none}
 
 #logo{margin:0 auto; padding:0 auto; width:150px; height:40px; }
+
+#videocontainer{
+	position:absolute;
+	overflow: hidden;
+	width:100%;
+	margin:0 auto;
+}
 
 .circular {
 	width: 100px;
@@ -13,16 +21,16 @@ li{list-style-type: none}
 	}
 
 .btn{border-radius:0px;}
-.btn-dark{background-color: #222; background-image:url(../img/dark.png);color:#9AB816; border:none; width:30px; height:30px;}
+.btn-dark{background-color: #222; background-image:url(../img/dark.png); background-repeat: no-repeat; color:#9AB816; border:none; width:30px; height:30px;}
 .btn-dark:hover{background-color: #444; color:#9AB816; border:none;}
-.btn-light{background-color: #eee; background-image:url(../img/light.png); height:30px; width:30px;}
+.btn-light{background-color: #eee; background-image:url(../img/light.png); background-repeat: no-repeat; height:30px; width:30px;}
 .bottom{height:100%;}
 
-.sm{height:50px;}
+.sm{height:50px; width:35px;}
 .lg{height:500px;}
 
-.navbar .navbar-fixed-top{min-height:30px; height:30px;}
-.navbar-inverse .navbar-nav > li > a {color:#ccc; font-family:Open Sans; font-size:.9em; font-weight: 600;}
+.navbar .navbar-fixed-bottom{min-height:30px; height:30px;}
+.navbar-inverse .navbar-nav > li > a {color:#ccc; font-family: 'Roboto', sans-serif; font-weight:300;font-size:.9em; }
 .navbar-inverse .navbar-nav > li > a :focus{color:#F26621;}
 .navbar-brand{padding-top: 5px;padding-bottom: 0px;}
 .navbar-inverse{background-color:#080808;  border-bottom:0px solid black;}
@@ -37,6 +45,6 @@ li{list-style-type: none}
 	.navbar-inverse 
 	.navbar-nav > 
 	.active > 
-	a:focus {background-color:#111; border-left:1px solid #7f5100; border-right:1px solid #7f5100;}
+	a:focus {background-color:#111; border-bottom:2px solid #0080C4; }
 
 	.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {color:#FFFEFA;}
