@@ -1,6 +1,9 @@
-body{background-color: #555; background-attachment:fixed; padding-top:50px; background-image: url(../img/bg1.jpg);}
-h1{font-family: 'Roboto', sans-serif; font-weight: 100; font-size: 2em; color:#ccc;}
+body{background-color: #555; background-attachment:fixed; padding-top:50px; background-image: url(../img/bg2.jpg);}
+h1{font-family: 'Roboto', sans-serif; font-weight: 100; font-size: 3em; color:#ccc;}
 li{list-style-type: none}
+
+#uparrow{color:white;}
+.navbar-toggle{border-radius: 0px}
 
 #logo{margin:0 auto; padding:0 auto; width:150px; height:40px; }
 
