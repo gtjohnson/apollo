@@ -69,22 +69,32 @@
 		        <span class="sr-only">Toggle navigation</span>
 		        <i id="uparrow" class="fa fa-angle-double-up"></i>
 		      </button>
-		      <a href="index.html" class="navbar-brand" style="color:#EEE" ><img id="logo" src="img/logo2.png"/></a>
+		      <a href="index.html" data-toggle="tooltip" data-placement="top" class="navbar-brand" style="color:#EEE" ><img id="logo" src="img/logo2.png"/></a>
 		    </div>
 		    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 		      <ul class="nav navbar-nav pull-right" style="" id="nav">
 		        
 		        <li><a href="work.html">Work</a></li>
 		        <li class="active"><a href="#about">About</a></li>
-		        <li><a href="#contact">Get in touch</a></li>
+		        <li><a id="elem" rel="popover" title="" data-content="
+		        	<a href='https://twitter.com/garethtjohnson' target='_void'><i class='fa fa-github fa-3x fa-black' title='Twitter'></i>
+		        	<a href='https://twitter.com/garethtjohnson' target='_void'><i class='fa fa-linkedin-square fa-3x fa-black' title='Twitter'></i>
+		        	<a href='https://twitter.com/garethtjohnson' target='_void'><i class='fa fa-google-plus-square fa-3x fa-black' title='Twitter'></i>
+		        	<a href='https://twitter.com/garethtjohnson' target='_void'><i class='fa fa-twitter-square fa-3x fa-black' title='Twitter'></i>
+		        	
+
+
+		        	" 
+
+		        	href="#" data-placement="top">Get in touch</a></li>
 		        <li>
 				    <div class="btn-group navbar-right" data-toggle="buttons">
-					  <label class="btn btn-default btn-sm btn-light styleswitch sm" rel="themeLight">
-					    <input type="radio" name="options" id="option1">
+					  <label class="styleswitch sm" rel="themeLight">
+					    <i class="fa fa-sun-o fa-2x" style="padding-top:10px"></i> 
 					  </label>
 					  
-					<label class="btn btn-default btn-sm btn-dark styleswitch sm" rel="themeDark">
-						<input type="radio" name="options" id="option2"> 
+					<label class="" rel="themeDark">
+						<i class="fa fa-moon-o fa-2x" style="padding-top:10px"></i> 
 					</label>
 					</div>
 				    </li>  
@@ -102,9 +112,20 @@
 <!-- content -->
 	<div class="row lg">
 		<div class="col-md-2"></div>
-		<div id="wrapper">
-		<div class="col-md-8" id="content"><h1>Hello. Shall we? </h1><p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p></div>
-		</div>
+		<div class="col-md-8" id="content">
+			<div class="circular"></div>
+			<h1>Hello, I'm Gareth.</h1>
+			<h3>I'm a graphic and interface designer, and I want to meet you. </h3><a href="#"><i class="fa fa-arrow-circle-o-right fa-3x" title="Check out my work!"></i></a>
+
+			<!-- BACKUP PARAGRAPH SOCIAL MEDIA
+			<i class="fa fa-folder-open-o fa-2x" title="info"></i>
+			<a href="https://github.com/gtjohnson" target="_void"><i class="fa fa-github fa-2x" title="Github"></i></a>
+			<a href="www.linkedin.com/in/garethjohnson/" target="_void"><i class="fa fa-linkedin-square fa-2x" title="Linkedin"></i>
+			<a href="https://plus.google.com/u/0/111459241837836498203" target="_void"><i class="fa fa-google-plus-square fa-2x" title="g+"></i>
+			<a href="https://twitter.com/garethtjohnson" target="_void"><i class="fa fa-twitter-square fa-2x" title="Twitter"></i>
+			-->
+
+			</div>
 		<div class="col-md-2"></div>
 	</div>
 
@@ -116,3 +137,10 @@
 </html>
 
 <!-- <div class="circular"></div> -->
+
+<div id="popover_content_wrapper" style="display: none">This is your div content</div>
+
+<script type="text/javascript">
+$('#elem').popover({ html : true });
+
+</script>
